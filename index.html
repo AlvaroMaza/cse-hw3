@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio Alvaro Maza</title>
+        <link rel = 'icon' href = 'multimedia/icon.ico'>
+
+
+        
+        <link rel="stylesheet" href="reset.css" media="screen" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="stylesheet.css" media="screen" type="text/css"/>
+
+
+    </head>
+
+    <body>
+
+        <nav id="navbar">
+            <a href="#" class="nav-logo">
+                <!--<a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Freepik - Flaticon</a>-->
+                <img src="multimedia/home-icon-silhouette.png" alt="home icon">
+            </a>
+            <ul id="nav-list">
+              <li class="nav-items"><a href="#aboutme">Me</a></li>
+              <li class="nav-items"><a href="#portfolio">Portfolio</a></li>
+              <li class="nav-items"><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="nav-logo-hidden">
+                <img src="multimedia/home-icon-silhouette.png" alt="home icon">
+            </a>
+        </nav>
+
+        <header>
+            <a href="https://www.linkedin.com/in/alvaromazamontesinos/">
+                <img src = "multimedia/name-logo1.png" alt="Name logo" width = 50%/>
+            </a>
+
+            <p>"The goal is to transform data into information, and information into insight"</p>
+        </header>
+        
+        <main>
+            <section id="aboutme">
+                <h2>About me</h2>
+
+                <br></br>
+
+                <div>
+                    <p>
+                        Hi, my name is Álvaro. I am currently studying at UCSD during my Junior year as an exchange student,
+                        but I am originally from Spain, where I study at Carlos III. My major is Data Science and Engineering,
+                        and I am also doing a minor in Finance and Accounting. 
+                    </p>
+                    <br></br>
+                    <p>
+                        My main interest is Data Science (Predictive Modeling, Computer Vision, Machine Learning...), but I 
+                        also enjoy other fileds such as Business Analytics, or Quantitative Finance
+                    </p>
+                    <br></br>
+                    <p>
+                        During my first and second year of University,
+                        I worked giving particular Python classes to other students.
+                        Since November 2022, I also work as the Head of
+                        Content of the Bussiness Analytics association in UC3M.
+                    </p>
+            
+                </div>
+
+                <picture>
+                    <source srcset="multimedia/me.jpg" media = "(min-width: 800px)" />
+
+                    <img src = "multimedia/me_small.jpg" alt="Photo of me" width = 70%/>
+                </picture>
+            </section>
+
+            <div id="grad1"></div>
+
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <p>Theese are some of the projects where I have worked so far:</p>
+
+                <div id="photos">
+                    <!--All images are from my own code in personal projects-->
+                    <a href="https://github.com/AlvaroMaza">
+                        <img src="multimedia/montecarlo.PNG" alt="Montecarlo simulation in options" class="photo"/>
+                    </a>
+                    <a href="https://github.com/AlvaroMaza">
+                        <img src="multimedia/reinforcementlearning.PNG" alt="Q-values table" class="photo"/>
+                    </a>
+                    <a href="https://github.com/AlvaroMaza">
+                        <img src="multimedia/cnn.PNG" alt="MNIST numbers" class="photo"/>
+                    </a>
+                    <a href="https://github.com/AlvaroMaza">
+                        <img src="multimedia/statistics.PNG" alt="Prediction intervals on regression" class="photo"/>
+                    </a>
+                </div>
+                <p>In the future the projects will be uploaded on my GitHub.</p>
+                <p>
+                    The first project is on how the Black-Scholes option valuation is asymptotically equivalent to using 
+                    montecatlo simulation. I did this project last year while learning about derivatives. I think the visualization 
+                    helps you to understand better option pricing models.
+                    In the second project I used reinforcement learning to try to create an automatic agent in Pac-Man. The reinforcement 
+                    learning technique used was used on the q values of the possitions with some created attributes like how far the nearest
+                    ghost was ussing Manhattan distance, in what direction the nearest food was...
+                </p>
+                <p>
+                    The third project consists in hand-written number classification using convolutional neural networks (CNN.
+                    I did this project during this year at UCSD, and I also developed a tk to be able to write your own number to
+                    use the trained model to classificate it. The last project is included in the portfolio to showcase the typical
+                    visualization techniques that a data science project requires. The project consist in the selection of the 
+                    variables in a linear regression depending on different criterias and the visualization of the results.
+                </p>
+
+                <p>I have many other interesting project that I decided to keep out of the Portfolio to not make it look very messy,
+                   but if you are interested on some more sample projects, do not hesitate on reaching out!
+                </p>
+
+
+            </section>
+
+            <div id="grad2"></div>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <br></br>
+                <p>
+                    If you have any doubt, any comment, or if you just want to chat about something related with data science,
+                    pleas contact me:
+                </p>
+
+
+                <nav>
+                    <ul>
+                        <li> <a href="https://www.linkedin.com/in/alvaromazamontesinos/">My LinkedIn Profile</a> </li>
+
+                        <li><a href="https://www.instagram.com/elonmusk/">Instagram Account</a> </li>
+                    </ul>
+
+                </nav>
+
+                <br></br>
+                <p>You can also send me you email:</p>
+                <br></br>
+                <form action="#" method="get" id="emailform">
+                    <fieldset>
+                    <legend>Your contact info:</legend>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                    </fieldset>
+                  </form>
+                  
+                  <button type="submit" class="button" form="emailform" value="Submit">Submit</button>
+
+                <p>Or reach to me via phone</p>
+                <p>+34 630 54 44 23</p>
+            </section>
+            
+        </main>
+
+        <footer>
+            <br></br>
+            <p>Website created by Álvaro Maza</p>
+            <p>Copriright &copy 2023</p>
+        </footer>
+        
+        
+
+
+
+    </body>
+</html>
+
+
+
