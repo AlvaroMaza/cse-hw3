@@ -2,7 +2,7 @@ html{
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     background-color: rgb(250, 238, 215);
-    text-size-adjust: 3.4vmin;
+    font-size: 2vmin;
     color: darkslategray;
 }
 
